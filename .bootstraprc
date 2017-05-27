@@ -1,0 +1,91 @@
+---
+#bootstrap version
+bootstrapVersion: 3
+
+#是否使用通用图标字体路径
+useCustonIconFontPath: false
+
+#webpack加载器
+styleLoaders:
+  - style-loader
+  - css-loader
+  - sass-loader
+
+extractStyles: false
+
+#修改bootstrap初始样式变量
+#例如　$input-height:200px !default;
+preBootstarpCustomizations: ./app/styles/bootstrap/pre-customizations.scss
+
+#修改bootstrap样式变量（基于bootstrap原有的样式变量修改）
+#例如　$input-height:$input-height * 1.10;
+bootstrapCustomizations: ./app/styles/bootstrap/customizations.scss
+
+#自定义样式
+appStyle: ./app/styles/app.scss
+
+#bootstrap样式
+styles:
+
+  mixins: true
+
+  normalize: true
+  print: true
+  glyphicons: true
+
+  #核心css	
+  scaffolding: true
+  type: true
+  code: true
+  grid: true
+  tables: true
+  forms: true
+  buttons: true
+
+  #组件
+  component-animations: true
+  dropdowns: true
+  button-groups: true
+  input-groups: true
+  navs: true
+  navbar: true
+  breadcrumbs: true
+  pagination: true
+  pager: true
+  labels: true
+  badges: true
+  jumbotron: true
+  thumbnails: true
+  alerts: true
+  progress-bars: true
+  media: true
+  list-group: true
+  panels: true
+  wells: true
+  responsive-embed: true
+  close: true
+
+  #Components w/ JavaScript
+  modals: true
+  tooltip: true
+  popovers: true
+  carousel: true
+
+  # Utility classes
+  utilities: true
+  responsive-utilities: true
+
+#Bootstrap scripts
+scripts:
+  transition: true
+  alert: true
+  button: true
+  carousel: true
+  collapse: true
+  dropdown: true
+  modal: true
+  tooltip: true
+  popover: true
+  scrollspy: true
+  tab: true
+  affix: true

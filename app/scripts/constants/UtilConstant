@@ -1,0 +1,12 @@
+'use strict';
+
+var TOASTR_OPTIONS = {
+    closeButton:true,
+    preventDuplicates:true,
+    positionClass:'toast-top-right',
+    tapToDismiss:true
+};
+
+module.exports = {
+    TOASTR_OPTIONS
+}
